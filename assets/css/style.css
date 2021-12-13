@@ -1,0 +1,292 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f5f4f8;
+  color: var(--bs-body-color);
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  margin: 0;
+  text-align: var(--bs-body-text-align);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* Nav */
+.navbar {
+  padding: 0.625rem 1rem;
+}
+
+.navbar-default {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgb(3 0 71 / 9%);
+}
+
+.navbar .navbar-brand {
+  padding-bottom: 0.2rem;
+  padding-top: 0;
+}
+
+.avatar {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.btn-light {
+  background-color: #f5f4f8;
+  border-color: #f5f4f8;
+  color: #000;
+}
+
+.indicator {
+  position: relative;
+}
+
+.indicator-primary::before {
+  background-color: #754ffe;
+}
+
+.indicator::before {
+  content: "";
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 0.18rem;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.btn.indicator::before {
+  top: 0;
+}
+.avatar.indicator::before {
+  bottom: 0;
+}
+
+.avatar-online::before {
+  background-color: #19cb98;
+}
+/* mobile view dropdwon styles */
+.dropdown .dropdown-menu.dropdown-notifications,
+.dropdown-account {
+  top: 50px !important;
+}
+
+.notifications .avatar-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.notifications .message-header {
+  font-size: 1rem;
+}
+.notifications .message-text {
+  font-size: 0.9rem;
+}
+
+.notifications .message-date {
+  font-size: 0.7rem;
+}
+
+.badge-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.tooltip {
+  font-size: 0.6rem;
+}
+
+.smallScrollArea {
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.status {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.status-online {
+  background-color: #19cb98;
+}
+
+.status-offline {
+  background-color: #754ffe;
+}
+/* Collapse styles */
+.navbar .navbar-toggler {
+  border: 1px solid #754ffe;
+}
+.navbar .navbar-toggler .icon-bar {
+  height: 2px;
+  width: 20px;
+  background-color: #754ffe;
+  display: block;
+  margin-top: 0.25rem;
+  transition: all 0.2s;
+}
+
+.navbar-toggler:hover {
+  box-shadow: 0 0 0 0.1rem;
+}
+
+.navbar .navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 16% 190%;
+}
+
+.navbar .navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar .navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar .navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% -80%;
+}
+
+.navbar .navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 0.5rem;
+}
+
+.dropdown-menu .dropdown-header {
+  letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav .nav-item .nav-link {
+  border-bottom: 1px solid #ecebf1;
+  padding: 0.5rem 0 !important;
+}
+
+.dropdown > .dropdown-menu {
+  box-shadow: 0 10px 30px 0 rgb(31 45 61 / 26%);
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #000
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #754ffe;
+}
+
+.dropdown-item:active, .dropdown-item:hover {
+  color: #754ffe;
+  background-color: #fff;
+}
+
+.dropdown-text {
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+}
+
+.navbar form {
+  position: relative;
+}
+
+.navbar form .form-control {
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+}
+
+.navbar form .search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+}
+
+.navbar form .x-clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: none;
+}
+
+/* Main section */
+.main .greeting {
+  background-color: #754ffe;
+}
+
+.greeting .welcome {
+  font-weight: 800;
+  font-family: serif;
+}
+
+.greeting .greeting-text {
+  font-size: 1.2rem;
+  color: #bfbdc7;
+}
+.btn-custom {
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+.btn-custom-success {
+  background-color: #19cb98;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.btn-custom-success:hover {
+  background-color: #0eb183;
+  color: #fff;
+}
+
+/* Statistics */
+.contents {
+  background-color: #fff;
+}
+
+.contents_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contents .icon-wraper {
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: rgb(255, 238, 218);
+}
